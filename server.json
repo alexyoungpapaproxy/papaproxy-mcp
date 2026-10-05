@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "net.papaproxy/mcp",
+  "title": "PapaProxy.net",
+  "description": "Manage datacenter and ISP proxies: pricing, orders, IP whitelisting, usage analytics.",
+  "version": "1.0.0",
+  "websiteUrl": "https://papaproxy.net/developers.php",
+  "repository": {
+    "url": "https://github.com/alexyoungpapaproxy/papaproxy-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://papaproxy.net/account_new/api/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token with your PapaProxy.net API key: Bearer fb_YOUR_API_KEY",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

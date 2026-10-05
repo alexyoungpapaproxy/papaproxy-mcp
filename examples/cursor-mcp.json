@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "papaproxy": {
+      "url": "https://papaproxy.net/account_new/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer fb_YOUR_API_KEY"
+      }
+    }
+  }
+}
